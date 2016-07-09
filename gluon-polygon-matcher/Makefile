@@ -22,7 +22,7 @@ endef
 define Build/Compile
 endef
 
-define Package/gluon-ssid-changer/install
+define Package/gluon-polygon-matcher/install
         $(CP) ./files/* $(1)/
 	endef
 
