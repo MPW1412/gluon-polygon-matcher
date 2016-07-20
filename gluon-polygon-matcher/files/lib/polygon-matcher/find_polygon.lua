@@ -1,12 +1,11 @@
 POLYGONS_BASE_URL = "http://firmware.freifunk-muensterland.de/md-fw-dl/shapes"
 HTTP_TO_HTTPS_PROXY= 'http://firmware.freifunk-muensterland.de/approxy.php?aps='
 WIFI_SCAN_COMMAND = 'iwinfo client0 scan'
--- WIFI_SCAN_COMMAND = 'iwlist wlan0 scan'
 RUECKMELDUNGS_URL = 'http://firmware.freifunk-muensterland.de/knoten.php?dom='
 
 domains = { count = 0 }
 wifis = {}
-JSON = (loadfile "JSON.lua")()
+JSON = (loadfile "/lib/polygon-matcher/JSON.lua")()
 
 Url_encode_from = { '%{', '"', '%:', '%[', ',', '%]', '%}' }
 Url_encode_to = { '%%7B', '%%22', '%%3A', '%%5B', '%%2C', '%%5D', '%%7D' }
