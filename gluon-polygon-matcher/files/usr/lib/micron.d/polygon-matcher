@@ -1,0 +1,1 @@
+7 */3 * * * lua /usr/lib/polygon-matcher/find_polygon.lua
