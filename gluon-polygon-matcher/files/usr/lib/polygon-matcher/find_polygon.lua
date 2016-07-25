@@ -5,7 +5,7 @@ RUECKMELDUNGS_URL = 'http://firmware.freifunk-muensterland.de/knoten.php?dom='
 
 domains = { count = 0 }
 wifis = {}
-JSON = (loadfile "/lib/polygon-matcher/JSON.lua")()
+JSON = (loadfile "/usr/lib/polygon-matcher/JSON.lua")()
 
 Url_encode_from = { '%{', '"', '%:', '%[', ',', '%]', '%}' }
 Url_encode_to = { '%%7B', '%%22', '%%3A', '%%5B', '%%2C', '%%5D', '%%7D' }
